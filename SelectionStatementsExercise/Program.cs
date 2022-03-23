@@ -11,7 +11,7 @@ namespace SelectionStatementsExercise
             Console.WriteLine("Try to guess my favorite number.");
             var userInput = int.Parse(Console.ReadLine());
 
-            //how to get the program to take input for a second guess?
+            //how to get the program to take input for a second guess
             while (favNumber != userInput)
             {
                 if (userInput < favNumber)
@@ -52,6 +52,9 @@ namespace SelectionStatementsExercise
                     break;
                 case "chemistry":
                     Console.WriteLine("Chemistry is a very challenging subject.");
+                    break;
+                default:
+                    Console.WriteLine("Sorry, I don't know that subject.");
                     break;
 
             }
